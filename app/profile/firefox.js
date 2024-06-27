@@ -199,35 +199,28 @@ pref("browser.uiCustomization.state", "{\"placements\":{\"widget-overflow-fixed-
 // pref("browser.uiCustomization.autoAdd", "{\"placements\":{\"widget-overflow-fixed-list\":[],\"unified-extensions-area\":[],\"nav-bar\":[\"back-button\",\"forward-button\",\"stop-reload-button\",\"home-button\",\"urlbar-container\",\"downloads-button\",\"developer-button\",\"fxa-toolbar-menu-button\",\"unified-extensions-button\"],\"toolbar-menubar\":[\"menubar-items\"],\"TabsToolbar\":[\"tabbrowser-tabs\",\"new-tab-button\",\"alltabs-button\"],\"PersonalToolbar\":[\"import-button\",\"personal-bookmarks\"]},\"seen\":[\"developer-button\"],\"dirtyAreaCache\":[\"PersonalToolbar\",\"nav-bar\",\"toolbar-menubar\",\"TabsToolbar\"],\"currentVersion\":19,\"newElementCount\":0}");
 
 // Betterfox Fastfox.js
-pref("nglayout.initialpaint.delay", 0); // default=5; used to be 250
-pref("nglayout.initialpaint.delay_in_oopif", 0); // default=5
-pref("content.notify.interval", 100000); // (.10s); default=120000 (.12s)
-pref("layout.css.grid-template-masonry-value.enabled", true);
-pref("dom.enable_web_task_scheduling", true);
-pref("layout.css.has-selector.enabled", true);
-pref("gfx.canvas.accelerated.cache-items", 4096); // default=2048; alt=8192
-pref("gfx.canvas.accelerated.cache-size", 512); // default=256; alt=1024
-pref("gfx.content.skia-font-cache-size", 20); // default=5; Chrome=20
-pref("media.memory_cache_max_size", 65536); // default=8192; AF=65536; alt=131072
-pref("media.cache_readahead_limit", 7200); // 120 min; default=60; stop reading ahead when our buffered data is this many seconds ahead of the current playback
-pref("media.cache_resume_threshold", 3600); // 60 min; default=30; when a network connection is suspended, don't resume it until the amount of buffered data falls below this threshold
-pref("image.mem.decode_bytes_at_a_time", 32768); // default=16384; alt=65536; chunk size for calls to the image decoders
-pref("network.buffer.cache.size", 262144); // 256 kb; default=32768 (32 kb)
-pref("network.buffer.cache.count", 128); // default=24
-pref("network.http.max-connections", 1800); // default=900
-pref("network.http.max-persistent-connections-per-server", 10); // default=6; download connections; anything above 10 is excessive
-pref("network.http.max-urgent-start-excessive-connections-per-host", 5); // default=3
-pref("network.websocket.max-connections", 400); // default=200
+pref("content.notify.interval", 100000); 
+pref("gfx.canvas.accelerated.cache-items", 4096); 
+pref("gfx.canvas.accelerated.cache-size", 512); 
+pref("gfx.content.skia-font-cache-size", 20); 
+pref("browser.cache.jsbc_compression_level", 3);
+pref("media.memory_cache_max_size", 65536); 
+pref("media.cache_readahead_limit", 7200); 
+pref("media.cache_resume_threshold", 3600); 
+pref("image.mem.decode_bytes_at_a_time", 32768); 
+pref("network.http.max-connections", 1800); 
+pref("network.http.max-persistent-connections-per-server", 10); 
+pref("network.http.max-urgent-start-excessive-connections-per-host", 5); 
 pref("network.http.pacing.requests.enabled", false);
-pref("network.dnsCacheEntries", 10000); // default=400
-pref("network.dnsCacheExpiration", 86400); // keep entries for 1 day; alt=3600 (1 hour)
-pref("network.dns.max_high_priority_threads", 8); // default=5
-pref("network.ssl_tokens_cache_capacity", 20480); // default=2048; more TLS token caching (fast reconnects)
-pref("network.http.speculative-parallel-limit", 0);
+pref("network.dnsCacheExpiration", 3600); 
+pref("network.ssl_tokens_cache_capacity", 10240); 
 pref("network.dns.disablePrefetch", true);
+pref("network.dns.disablePrefetchFromHTTPS", true); 
 pref("network.prefetch-next", false);
 pref("network.predictor.enabled", false);
-pref("network.predictor.enable-prefetch", false);
+pref("layout.css.grid-template-masonry-value.enabled", true);
+pref("dom.enable_web_task_scheduling", true);
+pref("dom.security.sanitizer.enabled", true);
 // END MISC MERCURY SETTINGS
 
 // If set to true, the Update Service will apply updates in the background
