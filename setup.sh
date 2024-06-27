@@ -64,7 +64,7 @@ cp -r -v ./netwerk/. ${HG_SRC_DIR}/netwerk/ &&
 cp -r -v ./other-licenses/. ${HG_SRC_DIR}/other-licenses/ &&
 mkdir -p -v /root/mozilla-unified/policies &&
 cp -r -v ./policies/. /root/mozilla-unified/policies/ &&
-cp -r -v ./toolkit/. ${HG_SRC_DIR}/toolkit/ &&
+#cp -r -v ./toolkit/. ${HG_SRC_DIR}/toolkit/ &&
 #cp -r -v ./testing/. ${HG_SRC_DIR}/testing/ &&
 cp -v ./mozconfigs/ga ${HG_SRC_DIR} &&
 cp -v ./mozconfigs/mozconfig ${HG_SRC_DIR} &&
