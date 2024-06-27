@@ -55,7 +55,7 @@ printf "\n" &&
 printf "${YEL}Copying Mercury source files over the Mozilla tree...${c0}\n" &&
 
 cp -r -v ./app/. ${HG_SRC_DIR}/browser/app/ &&
-cp -r -v ./browser/branding. ${HG_SRC_DIR}/browser/branding &&
+cp -r -v ./browser/. ${HG_SRC_DIR}/browser/ &&
 #cp -r -v ./build/. ${HG_SRC_DIR}/build/ &&
 cp -r -v ./devtools/. ${HG_SRC_DIR}/devtools/ &&
 cp -r -v ./ipc/. ${HG_SRC_DIR}/ipc/ &&
