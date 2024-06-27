@@ -55,17 +55,17 @@ printf "\n" &&
 printf "${YEL}Copying Mercury source files over the Mozilla tree...${c0}\n" &&
 
 cp -r -v ./app/. ${HG_SRC_DIR}/browser/app/ &&
-cp -r -v ./browser/. ${HG_SRC_DIR}/browser/ &&
-cp -r -v ./build/. ${HG_SRC_DIR}/build/ &&
+cp -r -v ./browser/branding. ${HG_SRC_DIR}/browser/branding &&
+#cp -r -v ./build/. ${HG_SRC_DIR}/build/ &&
 cp -r -v ./devtools/. ${HG_SRC_DIR}/devtools/ &&
 cp -r -v ./ipc/. ${HG_SRC_DIR}/ipc/ &&
-cp -r -v ./moz.build ${HG_SRC_DIR}/ &&
+#cp -r -v ./moz.build ${HG_SRC_DIR}/ &&
 cp -r -v ./netwerk/. ${HG_SRC_DIR}/netwerk/ &&
 cp -r -v ./other-licenses/. ${HG_SRC_DIR}/other-licenses/ &&
-mkdir -p -v ${HG_SRC_DIR}/policies &&
-cp -r -v ./policies/. ${HG_SRC_DIR}/policies/ &&
+mkdir -p -v /root/mozilla-unified/policies &&
+cp -r -v ./policies/. /root/mozilla-unified/policies/ &&
 cp -r -v ./toolkit/. ${HG_SRC_DIR}/toolkit/ &&
-cp -r -v ./testing/. ${HG_SRC_DIR}/testing/ &&
+#cp -r -v ./testing/. ${HG_SRC_DIR}/testing/ &&
 cp -v ./mozconfigs/ga ${HG_SRC_DIR} &&
 cp -v ./mozconfigs/mozconfig ${HG_SRC_DIR} &&
 
