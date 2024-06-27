@@ -133,7 +133,7 @@ copyAVX2 () {
 	printf "\n" &&
 	printf "${GRE}Copying AVX2 mozconfig${c0}\n" &&
 	printf "\n" &&
-	cp -v mozconfigs/context.py ${HG_SRC_DIR}/python/mozbuild/mozbuild/frontend/ &&
+# 	cp -v mozconfigs/context.py ${HG_SRC_DIR}/python/mozbuild/mozbuild/frontend/ &&
 	cp -v mozconfigs/mozconfig-avx2 ${HG_SRC_DIR}/mozconfig
 }
 case $1 in
@@ -144,7 +144,7 @@ copyWinAVX2 () {
 	printf "\n" &&
 	printf "${GRE}Copying Windows AVX2 mozconfig${c0}\n" &&
 	printf "\n" &&
-	cp -v mozconfigs/context.py ${HG_SRC_DIR}/python/mozbuild/mozbuild/frontend/ &&
+# 	cp -v mozconfigs/context.py ${HG_SRC_DIR}/python/mozbuild/mozbuild/frontend/ &&
 	cp -v mozconfigs/mozconfig-win-avx2 ${HG_SRC_DIR}/mozconfig
 }
 case $1 in
@@ -155,7 +155,7 @@ copyWinCrossAVX2 () {
 	printf "\n" &&
 	printf "${GRE}Copying Windows AVX2 (Cross Compile) mozconfig${c0}\n" &&
 	printf "\n" &&
-	cp -v mozconfigs/context.py ${HG_SRC_DIR}/python/mozbuild/mozbuild/frontend/ &&
+# 	cp -v mozconfigs/context.py ${HG_SRC_DIR}/python/mozbuild/mozbuild/frontend/ &&
 	cp -v mozconfigs/mozconfig-win-avx2-cross ${HG_SRC_DIR}/mozconfig
 }
 case $1 in
@@ -186,7 +186,7 @@ copyMac () {
 	printf "\n" &&
 	printf "${GRE}Copying MacOS x64 mozconfig${c0}\n" &&
 	printf "\n" &&
-	cp -v mozconfigs/context.py ${HG_SRC_DIR}/python/mozbuild/mozbuild/frontend/ &&
+# 	cp -v mozconfigs/context.py ${HG_SRC_DIR}/python/mozbuild/mozbuild/frontend/ &&
 	cp -v mozconfigs/mozconfig-macos-x64 ${HG_SRC_DIR}/mozconfig
 }
 case $1 in
@@ -207,7 +207,7 @@ copyMacCross () {
 	printf "\n" &&
 	printf "${GRE}Copying MacOS x64 (Cross Compile) mozconfig${c0}\n" &&
 	printf "\n" &&
-	cp -v mozconfigs/context.py ${HG_SRC_DIR}/python/mozbuild/mozbuild/frontend/ &&
+# 	cp -v mozconfigs/context.py ${HG_SRC_DIR}/python/mozbuild/mozbuild/frontend/ &&
 	cp -v mozconfigs/mozconfig-macos-x64-cross ${HG_SRC_DIR}/mozconfig
 }
 case $1 in
@@ -228,7 +228,7 @@ copyLinuxArm64 () {
 	printf "\n" &&
 	printf "${GRE}Copying Linux ARM64 mozconfig${c0}\n" &&
 	printf "\n" &&
-	cp -v mozconfigs/context.py ${HG_SRC_DIR}/python/mozbuild/mozbuild/frontend/ &&
+# 	cp -v mozconfigs/context.py ${HG_SRC_DIR}/python/mozbuild/mozbuild/frontend/ &&
 	cp -v mozconfigs/mozconfig-arm64 ${HG_SRC_DIR}/mozconfig
 }
 case $1 in
